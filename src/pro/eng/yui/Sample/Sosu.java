@@ -79,7 +79,7 @@ public class Sosu {
 			return true;
 		}
 		// 篩にかける
-		long limit = (value / 2);
+		long limit = (long) Math.sqrt(value / 2);
 		for (long i = 3; i < limit; i+=2){
 		   if(value % i == 0){
 		      return false;
