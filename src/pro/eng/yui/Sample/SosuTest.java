@@ -74,4 +74,9 @@ class SosuTest {
 		assertFalse(testableIsSosu(Long.MAX_VALUE));
 	}
 
+	@Test
+	void testBigPrime() {
+		assertTrue(testableIsSosu(641387128649L));
+	}
+
 }

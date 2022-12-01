@@ -79,7 +79,8 @@ public class Sosu {
 			return true;
 		}
 		// 篩にかける
-		for (int i = 3; i < (value/2); i+=2){
+		long limit = (value / 2);
+		for (long i = 3; i < limit; i+=2){
 		   if(value % i == 0){
 		      return false;
 		   }
